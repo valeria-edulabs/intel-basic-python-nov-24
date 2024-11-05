@@ -63,3 +63,6 @@ print(0 and 5)
 # print(f"Hi {name}, You are {age} years old")
 
 # print(f"Hi {input('your name: ')}, You are {2024 - int(input('your year: '))} years old")
+
+
+print(45%4)
