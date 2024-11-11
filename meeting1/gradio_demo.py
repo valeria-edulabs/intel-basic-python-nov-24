@@ -20,7 +20,8 @@ def calc_area(width, height):
 
 demo = gr.Interface(
     fn=calc_area,
-    inputs=["number", "number"],
+    inputs=["slider", "slider"],
+    # inputs=["number", "number"],
     # inputs=[Number(label="Insert width:"), Number(label="Insert height")],
     outputs=["text"],
     flagging_mode="never",
@@ -28,4 +29,4 @@ demo = gr.Interface(
 )
 
 
-demo.launch(share=True)
+demo.launch(share=False)
