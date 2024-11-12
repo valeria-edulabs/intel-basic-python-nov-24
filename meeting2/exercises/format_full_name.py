@@ -8,6 +8,6 @@
 
 # Usage
 # print(format_full_name("jOhN", "DOE"))  # Output: "John Doe"
-# print(format_full_name("ALICE", ""))    # Output: "Alice"
+# print(format_full_name("ALICE"))    # Output: "Alice"
 # print(format_full_name("", "SMITH"))    # Output: "Smith"
-# print(format_full_name("", ""))         # Output: ""
+# print(format_full_name())         # Output: ""

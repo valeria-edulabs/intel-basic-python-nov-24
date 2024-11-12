@@ -69,3 +69,58 @@ def bar1(*args):
 
 print("aaa", "bbbb", sep="_", end="***")
 print("ccc")
+
+def bar2(a, b, *args, c=5, d=6, **kwargs):
+    print("a", a)
+    print("b", b)
+    print("args", args)
+    print("c", c)
+    print("d", d)
+    print("kwargs", kwargs)
+
+bar2(10, 20, "yy", "tt",
+     valeria="YYYYYY", yogev="RRRRRR")
+
+# if dxfxfgdfg:
+#     pass
+# if dxfxfgdfg:
+#     pass
+#
+# if sdfsdf:
+#     pass
+# elif:
+#     pass
+# elif:
+
+#len(), sorted(), sum(), max(), min(), abs(), round(), divmod()
+
+my_list = [10,2,-3]
+my_tuple = (1,2,3)
+
+print(len(my_tuple))
+
+print(sorted(my_list, reverse=True))
+
+print(sum(my_list))
+
+print(min(my_list))
+
+print(round(4.6789, 2))
+
+# result = divmod(17, 4)
+# print("remainder", result[1])
+full, remainder = divmod(17, 4)
+print("remainder", remainder)
+
+
+def foo1():
+    return 1, 2, 3, 4, 5
+
+# num1, num2, _ = foo1()
+# num1, *t = foo1()
+
+first, *t, last = foo1()
+
+print(5 in my_list)
+print(5 not in my_list)
+print("t" in "hello")
