@@ -11,7 +11,6 @@
 models = ["Mazda 3", "Toyota Yaris", "Volvo S40", "Mazda 2", "Toyota Yaris", "Volvo S40"]
 colors = ["red", "white", "red", "blue", "black", "red"]
 
-
 # Example output:
 # {
 #     "Mazda 3": ["red"],
