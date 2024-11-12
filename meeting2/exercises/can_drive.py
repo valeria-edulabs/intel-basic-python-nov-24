@@ -25,3 +25,25 @@
 
 # Advanced:
 # Write a function that takes list of drinks, and list of corresponding amounts.
+
+def can_drive(drink, amount_ml):
+    # Normalize the drink input to lowercase for case-insensitive comparison
+    drink = drink.lower()
+
+    # Define legal limits for each drink type
+    if drink == "beer":
+        legal_limit = 500  # 500 ml for beer
+    elif drink == "wine":
+        legal_limit = 200  # 200 ml for wine
+    elif drink == "whiskey":
+        legal_limit = 50   # 50 ml for whiskey
+    elif drink == "none":
+        return True  # No alcohol means you can drive
+    else:
+        return False  # Invalid drink type, assume not allowed to drive
+
+    # Check if the amount consumed is within the legal limit
+    if amount_ml <= legal_limit:
+        return True  # You can drive if within the legal limit
+    else:
+        return False  # You cannot drive if the amount exceeds the legal limit
