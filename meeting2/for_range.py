@@ -31,3 +31,12 @@ for d, a in zip(drinks, amounts):
 for d, a, t in zip(drinks, amounts, temp):
     print(f"{d}: {a}", t)
 
+for d in drinks:
+    pass
+
+for char in "Apple":
+    pass
+
+sentence = "The sky is blue"
+for word in sentence.split():
+    print(word)
