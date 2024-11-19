@@ -162,7 +162,7 @@ cython_debug/
 .idea/
 
 meeting2/notes.md
-meeting2/solutions/
+#meeting2/solutions/
 
 meeting3/notes.md
-meeting3/solutions/
+#meeting3/solutions/
