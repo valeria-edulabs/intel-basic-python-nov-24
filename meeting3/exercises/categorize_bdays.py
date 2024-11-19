@@ -22,14 +22,36 @@ birthdays = [
 
 # result = categorize_birthdays_by_season(birthdays)
 # print(result)
-# # Output:
+# Output:
 # {
-#     # Advanced:
-#     # "Winter": [{"name": "Alice", "age_in_days": 34783}],
-#     "Winter":: ["Alice"],
+#     "Winter": ["Alice"],
 #     "Spring": [],
 #     "Summer": ["Bob"],
 #     "Fall": ["Charlie", "David"]
 # }
 
+
+def categorize_birthdays_by_season(birthdays):
+    seasons = {
+        "Winter": [],
+        "Spring": [],
+        "Summer": [],
+        "Fall": []
+    }
+
+    for person in birthdays:
+        name = person["name"]
+        birthday = person["birthday"]
+        month = int(birthday[5:7])
+
+        if month in [12, 1, 2]:
+            seasons["Winter"].append(name)
+        elif month in [3, 4, 5]:
+            seasons["Spring"].append(name)
+        elif month in [6, 7, 8]:
+            seasons["Summer"].append(name)
+        else:
+            seasons["Fall"].append(name)
+
+    return seasons
 

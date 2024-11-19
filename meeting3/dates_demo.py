@@ -42,3 +42,5 @@ print(now.strftime("%a, %d-%m-%Y"))
 my_date = "01/06/1999 13:04:09"
 my_date_as_datetime = datetime.strptime(my_date, "%d/%m/%Y %H:%M:%S")
 print(datetime.now() - my_date_as_datetime)
+
+print(my_date_as_datetime < now)
