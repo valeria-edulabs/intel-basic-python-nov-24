@@ -22,9 +22,11 @@ birthdays = [
 
 # result = categorize_birthdays_by_season(birthdays)
 # print(result)
-# Output:
+# # Output:
 # {
-#     "Winter": ["Alice"],
+#     # Advanced:
+#     # "Winter": [{"name": "Alice", "age_in_days": 34783}],
+#     "Winter":: ["Alice"],
 #     "Spring": [],
 #     "Summer": ["Bob"],
 #     "Fall": ["Charlie", "David"]
