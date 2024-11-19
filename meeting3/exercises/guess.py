@@ -19,3 +19,40 @@
 # Too low!
 # Enter your guess: 42
 # Correct!
+#
+#
+#
+# def guess_the_number(target):
+#     while True:
+#         guess = input("Insert a number")
+#         if guess.isdigit():
+#             guess = int(guess)
+#             if guess > target:
+#                 print("Too high")
+#             elif guess < target:
+#                 print("Too Low")
+#             else:
+#                 print("Correct")
+#                 break
+#         else:
+#             print("Insert a number, not a word")
+
+
+
+
+
+def guess_the_number(target):
+    while True:
+        try:
+            guess = int(input("Insert a number"))
+            if guess > target:
+                print("Too high")
+            elif guess < target:
+                print("Too Low")
+            else:
+                print("Correct")
+                break
+        except:
+            print("Insert a valid number")
+
+guess_the_number(47)
