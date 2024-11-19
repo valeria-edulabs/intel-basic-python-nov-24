@@ -31,27 +31,60 @@ birthdays = [
 # }
 
 
-def categorize_birthdays_by_season(birthdays):
-    seasons = {
-        "Winter": [],
-        "Spring": [],
-        "Summer": [],
-        "Fall": []
-    }
+# def categorize_birthdays_by_season(birthdays):
+#     seasons = {
+#         "Winter": [],
+#         "Spring": [],
+#         "Summer": [],
+#         "Fall": []
+#     }
+#
+#     for person in birthdays:
+#         print("person", person)
+#         name = person["name"]
+#         birthday = person["birthday"]
+#         month = int(birthday[5:7])
+#
+#         if month in [12, 1, 2]:
+#             seasons["Winter"].append(name)
+#         elif month in [3, 4, 5]:
+#             seasons["Spring"].append(name)
+#         elif month in [6, 7, 8]:
+#             seasons["Summer"].append(name)
+#         else:
+#             seasons["Fall"].append(name)
+#
+#     return seasons
+
+def categorize_birthdays_by_season(birthdays: list[dict]):
+    seasons = {}
 
     for person in birthdays:
+
         name = person["name"]
         birthday = person["birthday"]
         month = int(birthday[5:7])
 
+        season = ""
         if month in [12, 1, 2]:
-            seasons["Winter"].append(name)
+            season = "Winter"
         elif month in [3, 4, 5]:
-            seasons["Spring"].append(name)
+            season = "Spring"
         elif month in [6, 7, 8]:
-            seasons["Summer"].append(name)
+            season = "Summer"
         else:
-            seasons["Fall"].append(name)
+            season = "Fall"
+
+        if season not in seasons:
+            seasons[season] = []
+        seasons[season].append(name)
 
     return seasons
+print(categorize_birthdays_by_season(birthdays))
+
+
+
+# d = {}
+# print(d["Winter"])
+# d["Winter"] = ["David"]
 
