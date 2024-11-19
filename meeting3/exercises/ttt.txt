@@ -1,0 +1,8 @@
+{
+    "categories":[],
+    "created_at":"2020-01-05 13:42:24.696555",
+    "icon_url":"https://api.chucknorris.io/img/avatar/chuck-norris.png",
+    "id":"cnPGHq4NR7eIMoVTxHCEQg",
+    "updated_at":"2020-01-05 13:42:24.696555",
+    "url":"https://api.chucknorris.io/jokes/cnPGHq4NR7eIMoVTxHCEQg",
+    "value":"Chuck Norris survived Alderaan."}
